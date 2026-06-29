@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summer Drop 2026 — Stories</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #111;
+  font-family: 'Montserrat', sans-serif;
+  padding: 48px 24px 80px;
+  min-height: 100vh;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.page-header h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.page-header p {
+  font-size: 13px;
+  color: rgba(255,255,255,.35);
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 390px);
+  gap: 40px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.card-num {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.3);
+}
+
+/* ── THE STORY ── */
+.story {
+  width: 390px;
+  height: 844px;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 24px 80px rgba(0,0,0,.8);
+  flex-shrink: 0;
+}
+
+.dl-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.25);
+  color: rgba(255,255,255,.7);
+  padding: 11px 32px;
+  border-radius: 99px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all .2s;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.dl-btn:hover {
+  background: rgba(255,255,255,.1);
+  color: #fff;
+  border-color: rgba(255,255,255,.5);
+}
+
+/* ────────────────────────────────────────────────
+   STORY 1 — GOLD ANNOUNCEMENT
+──────────────────────────────────────────────── */
+.s1 {
+  background: linear-gradient(165deg, #ffd000 0%, #ff8c00 55%, #e03000 100%);
+  position: relative;
+}
+.s1-inner {
+  position: relative;
+  width: 100%; height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  padding: 28px 28px 36px;
+}
+.s1::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255,255,200,.6) 0%, transparent 60%),
+    radial-gradient(circle at 15% 18%, rgba(255,240,100,.25) 0%, transparent 35%);
+}
+.s1-dots {
+  position: absolute; inset: 0; z-index: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,.55) 1.2px, transparent 1.2px);
+  background-size: 48px 48px;
+}
+.s1-topbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  position: relative; z-index: 2;
+}
+.s1-pill {
+  background: rgba(0,0,0,.22);
+  border-radius: 99px;
+  padding: 5px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255,255,255,.9);
+  letter-spacing: 1.5px;
+}
+.s1-sun {
+  font-size: 148px;
+  line-height: 1;
+  filter: drop-shadow(0 0 32px rgba(255,200,0,.7)) drop-shadow(0 8px 24px rgba(180,60,0,.5));
+  position: relative; z-index: 2;
+  margin-bottom: 4px;
+}
+.s1-title {
+  text-align: center;
+  position: relative; z-index: 2;
+  line-height: 1;
+}
+.s1-title .w1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 112px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  text-shadow: 0 4px 0 rgba(160,50,0,.45), 0 10px 30px rgba(0,0,0,.25);
+  display: block;
+  line-height: .95;
+}
+.s1-title .w2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 112px;
+  font-weight: 700;
+  color: #ffe566;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  text-shadow: 0 4px 0 rgba(130,50,0,.5), 0 10px 30px rgba(0,0,0,.3);
+  display: block;
+  line-height: .95;
+}
+.s1-year {
+  font-size: 22px;
+  font-weight: 800;
+  color: rgba(255,255,255,.9);
+  letter-spacing: 8px;
+  margin-top: 10px;
+  position: relative; z-index: 2;
+}
+.s1-brand {
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255,255,255,.55);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 2px;
+  position: relative; z-index: 2;
+}
+.s1-dash {
+  width: 100%;
+  border: none;
+  border-top: 2px dashed rgba(255,255,255,.35);
+  margin: 20px 0;
+  position: relative; z-index: 2;
+}
+.s1-prize {
+  width: 100%;
+  background: rgba(255,255,255,.18);
+  border: 2px solid rgba(255,255,255,.45);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  position: relative; z-index: 2;
+}
+.s1-prize-lbl {
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255,255,255,.7);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.s1-prize-val {
+  font-family: 'Oswald', sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 3px;
+  text-shadow: 0 3px 12px rgba(0,0,0,.3);
+  margin-top: 4px;
+}
+.s1-cta {
+  margin-top: auto;
+  background: rgba(0,0,0,.28);
+  border: 2px solid rgba(255,255,255,.55);
+  border-radius: 99px;
+  padding: 14px 48px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: relative; z-index: 2;
+  white-space: nowrap;
+}
+.s1-bolt {
+  position: absolute;
+  right: 18px; top: 90px;
+  font-size: 80px;
+  opacity: .18;
+  transform: rotate(8deg);
+  z-index: 1;
+}
+
+/* ────────────────────────────────────────────────
+   STORY 2 — DARK GOLD (Accessories)
+──────────────────────────────────────────────── */
+.s2 {
+  background: linear-gradient(165deg, #1c0b00 0%, #3e1a00 50%, #1a0800 100%);
+  position: relative;
+}
+.s2::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 0;
+  background: radial-gradient(ellipse 90% 45% at 50% -5%, rgba(255,140,0,.2) 0%, transparent 60%);
+}
+.s2-dots {
+  position: absolute; inset: 0; z-index: 0;
+  background-image: radial-gradient(circle, rgba(255,180,50,.5) 1px, transparent 1px);
+  background-size: 56px 56px; background-position: 14px 14px;
+}
+.s2-inner {
+  position: relative; z-index: 1;
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  padding: 28px 28px 32px;
+  gap: 0;
+}
+
+/* shared across dark stories */
+.tag-pill {
+  display: inline-block;
+  border-radius: 12px;
+  padding: 9px 20px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.tag-gold { background: linear-gradient(135deg, #ffb300, #ff7000); }
+.tag-pink { background: linear-gradient(135deg, #ff2fa0, #b5006a); }
+.tag-blue { background: linear-gradient(135deg, #0099ff, #0044cc); }
+
+.story-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+.story-title .l1 { font-size: 66px; color: #fff; letter-spacing: 2px; display: block; }
+.story-title .gold { color: #ffb300; }
+.story-title .pink { color: #ff2fa0; }
+.story-title .blue { color: #00aaff; }
+
+.section-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.lbl-gold { color: rgba(255,180,50,.65); }
+.lbl-pink { color: rgba(255,100,200,.65); }
+.lbl-blue { color: rgba(100,190,255,.65); }
+
+.row-cards { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+
+.row-card {
+  background: rgba(255,255,255,.06);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+}
+.rc-icon {
+  width: 48px; height: 48px; min-width: 48px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+}
+.rc-icon-gold { background: linear-gradient(135deg, #ffb300, #ff7000); box-shadow: 0 4px 14px rgba(255,120,0,.35); }
+.rc-info .ri-amt { font-size: 12px; color: rgba(255,255,255,.45); font-weight: 600; }
+.ri-tick { font-size: 20px; font-weight: 800; color: #fff; }
+.ri-tick span { font-size: 26px; }
+.ri-tick.gold span { color: #ffb300; }
+
+.divider-line {
+  height: 1px;
+  margin: 4px 0 18px;
+}
+.div-gold { background: rgba(255,180,50,.15); }
+.div-pink { background: rgba(255,50,180,.15); }
+.div-blue { background: rgba(0,150,255,.15); }
+
+.loyal-box {
+  border-radius: 18px;
+  padding: 16px 18px;
+  flex: 1;
+}
+.lb-gold { background: rgba(255,180,50,.08); border: 1px solid rgba(255,180,50,.22); }
+.lb-pink { background: rgba(255,50,180,.08); border: 1px solid rgba(255,50,180,.22); }
+.lb-blue { background: rgba(0,150,255,.08); border: 1px solid rgba(0,150,255,.22); }
+
+.lb-title {
+  font-size: 9px; font-weight: 800; letter-spacing: 3px;
+  text-transform: uppercase; margin-bottom: 10px;
+}
+.lb-title.gold { color: #ffb300; }
+.lb-title.pink { color: #ff2fa0; }
+.lb-title.blue { color: #00aaff; }
+
+.lb-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  font-size: 14px;
+}
+.lb-row:last-child { border-bottom: none; }
+.lb-amt { color: rgba(255,255,255,.55); font-weight: 600; }
+.lb-tick { font-weight: 800; }
+.lb-tick.gold { color: #ffb300; }
+.lb-tick.pink { color: #ff80d0; }
+.lb-tick.blue { color: #55ccff; }
+
+.story-logo {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: auto;
+  padding-top: 14px;
+}
+.logo-gold { color: rgba(255,180,50,.2); }
+.logo-pink { color: rgba(255,50,180,.2); }
+.logo-blue { color: rgba(0,150,255,.2); }
+
+/* ────────────────────────────────────────────────
+   STORY 3 — PINK (Tech)
+──────────────────────────────────────────────── */
+.s3 {
+  background: linear-gradient(165deg, #1a0014 0%, #400038 50%, #160010 100%);
+  position: relative;
+}
+.s3::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 0;
+  background: radial-gradient(ellipse 90% 45% at 50% -5%, rgba(255,50,180,.2) 0%, transparent 60%);
+}
+.s3-dots {
+  position: absolute; inset: 0; z-index: 0;
+  background-image: radial-gradient(circle, rgba(255,100,200,.5) 1px, transparent 1px);
+  background-size: 56px 56px; background-position: 14px 14px;
+}
+.s3-inner {
+  position: relative; z-index: 1;
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  padding: 28px 28px 32px;
+}
+
+.step-box {
+  border-radius: 18px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+}
+.sb-pink { background: rgba(255,50,180,.08); border: 1px solid rgba(255,50,180,.22); }
+.step-box-title { font-size: 9px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; color: #ff2fa0; }
+.step-row { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+.step-row:last-child { margin-bottom: 0; }
+.step-num {
+  width: 32px; height: 32px; min-width: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff2fa0, #b5006a);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; font-weight: 900; color: #fff;
+}
+.step-text { font-size: 13px; color: rgba(255,255,255,.72); font-weight: 600; line-height: 1.45; padding-top: 4px; }
+.step-text b { color: #ff80d0; }
+
+.ex-box {
+  border-left: 3px solid #ff2fa0;
+  border-radius: 0 14px 14px 0;
+  background: rgba(255,50,180,.06);
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+.ex-lbl { font-size: 9px; font-weight: 800; letter-spacing: 3px; color: #ff2fa0; text-transform: uppercase; margin-bottom: 8px; }
+.ex-row { display: flex; justify-content: space-between; padding: 4px 0; font-size: 13px; }
+.ex-s { color: rgba(255,255,255,.5); font-weight: 600; }
+.ex-t { font-weight: 800; color: #ff80d0; }
+
+/* ────────────────────────────────────────────────
+   STORY 4 — BLUE (Loyal)
+──────────────────────────────────────────────── */
+.s4 {
+  background: linear-gradient(165deg, #001220 0%, #002858 50%, #001020 100%);
+  position: relative;
+}
+.s4::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 0;
+  background: radial-gradient(ellipse 90% 45% at 50% -5%, rgba(0,130,255,.2) 0%, transparent 60%);
+}
+.s4-dots {
+  position: absolute; inset: 0; z-index: 0;
+  background-image: radial-gradient(circle, rgba(100,200,255,.5) 1px, transparent 1px);
+  background-size: 56px 56px; background-position: 14px 14px;
+}
+.s4-inner {
+  position: relative; z-index: 1;
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  padding: 28px 28px 32px;
+}
+
+.bonus-card {
+  background: rgba(0,140,255,.1);
+  border: 1px solid rgba(0,140,255,.28);
+  border-radius: 18px;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+}
+.bc-title { font-size: 9px; font-weight: 800; letter-spacing: 3px; color: #00aaff; text-transform: uppercase; margin-bottom: 12px; }
+.bc-hl {
+  background: rgba(0,150,255,.15);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex; align-items: center; gap: 14px;
+  margin-bottom: 12px;
+}
+.bc-hl-icon { font-size: 36px; }
+.bc-hl-text .bch { font-size: 16px; font-weight: 800; color: #fff; }
+.bc-hl-text .bcs { font-size: 13px; color: #55ccff; font-weight: 600; margin-top: 2px; }
+.bc-item { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.bc-item:last-child { margin-bottom: 0; }
+.bc-dot {
+  width: 28px; height: 28px; min-width: 28px;
+  border-radius: 8px; background: rgba(0,140,255,.3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 900; color: #00aaff;
+}
+.bc-text { font-size: 13px; color: rgba(255,255,255,.7); font-weight: 600; }
+.bc-text b { color: #55ccff; }
+
+.scale-wrap { margin-bottom: 14px; }
+.scale-title { font-size: 9px; font-weight: 800; letter-spacing: 3px; color: rgba(100,190,255,.55); text-transform: uppercase; margin-bottom: 10px; }
+.scale-cols { display: flex; gap: 8px; }
+.scale-col { flex: 1; }
+.scale-track { height: 7px; background: rgba(0,100,200,.2); border-radius: 99px; overflow: hidden; margin-bottom: 6px; }
+.scale-fill { height: 100%; background: linear-gradient(90deg, #0044cc, #00aaff); border-radius: 99px; }
+.scale-tick { font-size: 13px; font-weight: 800; color: #00aaff; text-align: center; }
+.scale-sub { font-size: 9px; color: rgba(255,255,255,.3); text-align: center; margin-top: 2px; font-weight: 600; }
+
+/* ────────────────────────────────────────────────
+   STORY 5 — DARK MULTI (How to)
+──────────────────────────────────────────────── */
+.s5 {
+  background: linear-gradient(165deg, #0d0d0d 0%, #17131f 50%, #0d0d0d 100%);
+  position: relative;
+}
+.s5::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 0;
+  background:
+    radial-gradient(circle at 12% 22%, rgba(255,150,0,.1) 0%, transparent 38%),
+    radial-gradient(circle at 88% 78%, rgba(0,110,255,.09) 0%, transparent 38%),
+    radial-gradient(circle at 50% 50%, rgba(200,0,120,.05) 0%, transparent 42%);
+}
+.s5-dots {
+  position: absolute; inset: 0; z-index: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,.3) 1px, transparent 1px);
+  background-size: 70px 70px; background-position: 20px 20px;
+}
+.s5-inner {
+  position: relative; z-index: 1;
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column; align-items: center;
+  padding: 44px 28px 36px;
+}
+.s5-eyebrow { font-size: 10px; letter-spacing: 4px; color: rgba(255,255,255,.28); text-transform: uppercase; font-weight: 700; margin-bottom: 6px; }
+.s5-big1 { font-family: 'Oswald', sans-serif; font-size: 140px; font-weight: 700; color: #fff; letter-spacing: 4px; line-height: .95; text-shadow: 0 4px 24px rgba(0,0,0,.5); }
+.s5-big2 { font-family: 'Oswald', sans-serif; font-size: 54px; font-weight: 700; color: #ffc840; letter-spacing: 3px; line-height: 1; margin-bottom: 6px; }
+.s5-sub { font-size: 13px; color: rgba(255,255,255,.3); letter-spacing: 2px; font-weight: 600; margin-bottom: 22px; }
+
+.s5-tickets { display: flex; gap: 10px; margin-bottom: 28px; }
+.s5-tp {
+  width: 84px; height: 48px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 28px;
+}
+
+.s5-methods { display: flex; flex-direction: column; gap: 12px; width: 100%; }
+.s5-method {
+  background: rgba(255,255,255,.05);
+  border-radius: 20px;
+  padding: 16px 18px;
+  display: flex; align-items: flex-start; gap: 14px;
+}
+.s5-m1 { border: 1px solid rgba(255,160,0,.3); }
+.s5-m2 { border: 1px solid rgba(220,0,130,.3); }
+.s5-m3 { border: 1px solid rgba(0,140,255,.3); }
+.s5-icon { font-size: 40px; line-height: 1; flex-shrink: 0; margin-top: 2px; }
+.s5-mtitle { font-size: 14px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+.s5-mdesc { font-size: 12px; color: rgba(255,255,255,.42); line-height: 1.55; font-weight: 500; }
+.s5-mdesc b { color: rgba(255,255,255,.72); }
+
+.s5-footer {
+  margin-top: auto;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  letter-spacing: 6px;
+  color: rgba(255,190,0,.28);
+}
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Summer Drop 2026</h1>
+  <p>Нажми кнопку под сторис — файл скачается автоматически</p>
+</div>
+
+<div class="grid">
+
+  <!-- ═══ STORY 1 ═══ -->
+  <div class="card">
+    <div class="card-num">① Анонс</div>
+    <div class="story s1" id="s1">
+      <div class="s1-dots"></div>
+      <div class="s1-bolt">⚡</div>
+      <div class="s1-inner">
+        <div class="s1-topbar">
+          <div class="s1-pill">Good Case</div>
+          <div class="s1-pill">⚡ РОЗЫГРЫШ</div>
+        </div>
+        <div class="s1-sun">☀️</div>
+        <div class="s1-title">
+          <span class="w1">SUMMER</span>
+          <span class="w2">DROP</span>
+        </div>
+        <div class="s1-year">✦ 2026 ✦</div>
+        <div class="s1-brand">Good Case</div>
+        <hr class="s1-dash">
+        <div class="s1-prize">
+          <div class="s1-prize-lbl">🎟 Собери билеты и выиграй</div>
+          <div class="s1-prize-val">ВАШ ПРИЗ</div>
+        </div>
+        <div class="s1-cta">УЧАСТВОВАТЬ →</div>
+      </div>
+    </div>
+    <button class="dl-btn" onclick="download('s1','story_1_announcement.png')">⬇ Скачать сторис 1</button>
+  </div>
+
+  <!-- ═══ STORY 2 ═══ -->
+  <div class="card">
+    <div class="card-num">② Аксессуары</div>
+    <div class="story s2" id="s2">
+      <div class="s2-dots"></div>
+      <div class="s2-inner">
+        <div class="tag-pill tag-gold">📦 Аксессуары</div>
+        <div class="story-title">
+          <span class="l1">Билеты за</span>
+          <span class="l1 gold">аксессуары</span>
+        </div>
+
+        <div class="section-label lbl-gold">Для всех покупателей</div>
+        <div class="row-cards">
+          <div class="row-card">
+            <div class="rc-icon rc-icon-gold">🎟</div>
+            <div class="rc-info">
+              <div class="ri-amt">от 5 000 ₽</div>
+              <div class="ri-tick gold"><span>1</span> билет</div>
+            </div>
+          </div>
+          <div class="row-card">
+            <div class="rc-icon rc-icon-gold">🎟</div>
+            <div class="rc-info">
+              <div class="ri-amt">от 10 000 ₽</div>
+              <div class="ri-tick gold"><span>2</span> билета</div>
+            </div>
+          </div>
+          <div class="row-card">
+            <div class="rc-icon rc-icon-gold">🎟</div>
+            <div class="rc-info">
+              <div class="ri-amt">от 15 000 ₽</div>
+              <div class="ri-tick gold"><span>3</span> билета</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider-line div-gold"></div>
+        <div class="section-label lbl-gold">💳 С картой лояльности — выгоднее</div>
+        <div class="loyal-box lb-gold">
+          <div class="lb-title gold">Условия для постоянных клиентов</div>
+          <div class="lb-row"><span class="lb-amt">от 4 000 ₽</span><span class="lb-tick gold">🎟 1 билет</span></div>
+          <div class="lb-row"><span class="lb-amt">от 8 000 ₽</span><span class="lb-tick gold">🎟🎟 2 билета</span></div>
+          <div class="lb-row"><span class="lb-amt">от 12 000 ₽</span><span class="lb-tick gold">🎟🎟🎟 3 билета</span></div>
+        </div>
+
+        <div class="story-logo logo-gold">SUMMER DROP 2026</div>
+      </div>
+    </div>
+    <button class="dl-btn" onclick="download('s2','story_2_accessories.png')">⬇ Скачать сторис 2</button>
+  </div>
+
+  <!-- ═══ STORY 3 ═══ -->
+  <div class="card">
+    <div class="card-num">③ Техника</div>
+    <div class="story s3" id="s3">
+      <div class="s3-dots"></div>
+      <div class="s3-inner">
+        <div class="tag-pill tag-pink">📱 Техника</div>
+        <div class="story-title">
+          <span class="l1">Билеты за</span>
+          <span class="l1 pink">технику</span>
+        </div>
+
+        <div class="section-label lbl-pink">Для всех покупателей</div>
+        <div class="step-box sb-pink">
+          <div class="step-box-title">Как получить билеты</div>
+          <div class="step-row">
+            <div class="step-num">1</div>
+            <div class="step-text">Техника + аксессуары от <b>4 000 ₽</b> → <b>1 билет</b> сразу</div>
+          </div>
+          <div class="step-row">
+            <div class="step-num">+</div>
+            <div class="step-text">За каждые доп. <b>3 500 ₽</b> в чеке → ещё <b>+1 билет</b></div>
+          </div>
+        </div>
+
+        <div class="ex-box">
+          <div class="ex-lbl">Пример</div>
+          <div class="ex-row"><span class="ex-s">Чек 4 000 ₽</span><span class="ex-t">🎟 1 билет</span></div>
+          <div class="ex-row"><span class="ex-s">Чек 7 500 ₽</span><span class="ex-t">🎟🎟 2 билета</span></div>
+          <div class="ex-row"><span class="ex-s">Чек 11 000 ₽</span><span class="ex-t">🎟🎟🎟 3 билета</span></div>
+        </div>
+
+        <div class="divider-line div-pink"></div>
+        <div class="section-label lbl-pink">💳 С картой лояльности</div>
+        <div class="loyal-box lb-pink">
+          <div class="lb-title pink">Ещё выгоднее для постоянных клиентов</div>
+          <div class="lb-row"><span class="lb-amt">Любая техника</span><span class="lb-tick pink">🎟 1 билет сразу</span></div>
+          <div class="lb-row"><span class="lb-amt">Техника + 2 500 ₽</span><span class="lb-tick pink">🎟🎟 2 билета</span></div>
+          <div class="lb-row"><span class="lb-amt">Техника + 5 000 ₽</span><span class="lb-tick pink">🎟🎟🎟 3 билета</span></div>
+        </div>
+
+        <div class="story-logo logo-pink">SUMMER DROP 2026</div>
+      </div>
+    </div>
+    <button class="dl-btn" onclick="download('s3','story_3_tech.png')">⬇ Скачать сторис 3</button>
+  </div>
+
+  <!-- ═══ STORY 4 ═══ -->
+  <div class="card">
+    <div class="card-num">④ Постоянным клиентам</div>
+    <div class="story s4" id="s4">
+      <div class="s4-dots"></div>
+      <div class="s4-inner">
+        <div class="tag-pill tag-blue">💳 Постоянным</div>
+        <div class="story-title">
+          <span class="l1">Карта</span>
+          <span class="l1 blue">лояльности</span>
+          <span class="l1" style="font-size:44px; color:rgba(255,255,255,.8);">= больше билетов</span>
+        </div>
+
+        <div class="bonus-card">
+          <div class="bc-title">⚡ Бонус на технику</div>
+          <div class="bc-hl">
+            <div class="bc-hl-icon">📱</div>
+            <div class="bc-hl-text">
+              <div class="bch">Любая техника</div>
+              <div class="bcs">→ 1 билет моментально</div>
+            </div>
+          </div>
+          <div class="bc-item">
+            <div class="bc-dot">+</div>
+            <div class="bc-text">Каждые <b>2 500 ₽</b> в чеке → ещё <b>+1 билет</b></div>
+          </div>
+          <div class="bc-item">
+            <div class="bc-dot">💡</div>
+            <div class="bc-text">Без карты порог <b>3 500 ₽</b> — с картой выгоднее!</div>
+          </div>
+        </div>
+
+        <div class="scale-wrap">
+          <div class="scale-title">Сколько билетов получите</div>
+          <div class="scale-cols">
+            <div class="scale-col">
+              <div class="scale-track"><div class="scale-fill" style="width:25%"></div></div>
+              <div class="scale-tick">🎟 1</div><div class="scale-sub">техника</div>
+            </div>
+            <div class="scale-col">
+              <div class="scale-track"><div class="scale-fill" style="width:50%"></div></div>
+              <div class="scale-tick">🎟 2</div><div class="scale-sub">+2 500 ₽</div>
+            </div>
+            <div class="scale-col">
+              <div class="scale-track"><div class="scale-fill" style="width:75%"></div></div>
+              <div class="scale-tick">🎟 3</div><div class="scale-sub">+5 000 ₽</div>
+            </div>
+            <div class="scale-col">
+              <div class="scale-track"><div class="scale-fill" style="width:100%"></div></div>
+              <div class="scale-tick">🎟 4</div><div class="scale-sub">+7 500 ₽</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider-line div-blue"></div>
+        <div class="section-label lbl-blue">📦 Аксессуары (без техники)</div>
+        <div class="loyal-box lb-blue">
+          <div class="lb-title blue">Условия для карты лояльности</div>
+          <div class="lb-row"><span class="lb-amt">от 4 000 ₽</span><span class="lb-tick blue">🎟 1 билет</span></div>
+          <div class="lb-row"><span class="lb-amt">от 8 000 ₽</span><span class="lb-tick blue">🎟🎟 2 билета</span></div>
+          <div class="lb-row"><span class="lb-amt">от 12 000 ₽</span><span class="lb-tick blue">🎟🎟🎟 3 билета</span></div>
+        </div>
+
+        <div class="story-logo logo-blue">SUMMER DROP 2026</div>
+      </div>
+    </div>
+    <button class="dl-btn" onclick="download('s4','story_4_loyal.png')">⬇ Скачать сторис 4</button>
+  </div>
+
+  <!-- ═══ STORY 5 ═══ -->
+  <div class="card">
+    <div class="card-num">⑤ Как участвовать</div>
+    <div class="story s5" id="s5">
+      <div class="s5-dots"></div>
+      <div class="s5-inner">
+        <div class="s5-eyebrow">Good Case · Summer Drop 2026</div>
+        <div class="s5-big1">КАК</div>
+        <div class="s5-big2">УЧАСТВОВАТЬ</div>
+        <div class="s5-sub">3 простых шага</div>
+
+        <div class="s5-tickets">
+          <div class="s5-tp" style="background:linear-gradient(135deg,#ffb300,#ff7000);">☀️</div>
+          <div class="s5-tp" style="background:linear-gradient(135deg,#ff2fa0,#b5006a);">🌸</div>
+          <div class="s5-tp" style="background:linear-gradient(135deg,#0099ff,#0044cc);">❄️</div>
+        </div>
+
+        <div class="s5-methods">
+          <div class="s5-method s5-m1">
+            <div class="s5-icon">🛍️</div>
+            <div>
+              <div class="s5-mtitle">Совершите покупку</div>
+              <div class="s5-mdesc">Аксессуары от <b>5 000 ₽</b> или техника + аксессуары от <b>4 000 ₽</b></div>
+            </div>
+          </div>
+          <div class="s5-method s5-m2">
+            <div class="s5-icon">🎟</div>
+            <div>
+              <div class="s5-mtitle">Получите билеты</div>
+              <div class="s5-mdesc">Больше сумма — больше билетов. <b>С картой лояльности условия выгоднее!</b></div>
+            </div>
+          </div>
+          <div class="s5-method s5-m3">
+            <div class="s5-icon">🏆</div>
+            <div>
+              <div class="s5-mtitle">Участвуйте в розыгрыше</div>
+              <div class="s5-mdesc">Копите билеты до конца акции и выигрывайте <b>крутые призы!</b></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="s5-footer">SUMMER DROP 2026</div>
+      </div>
+    </div>
+    <button class="dl-btn" onclick="download('s5','story_5_howto.png')">⬇ Скачать сторис 5</button>
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+async function download(id, filename) {
+  const el = document.getElementById(id);
+  const btn = el.closest('.card').querySelector('.dl-btn');
+  btn.textContent = '⏳ Готовим PNG...';
+  btn.disabled = true;
+  try {
+    const canvas = await html2canvas(el, {
+      scale: 2.77,
+      useCORS: true,
+      allowTaint: true,
+      backgroundColor: null,
+      logging: false,
+      width: 390,
+      height: 844
+    });
+    canvas.toBlob(blob => {
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = filename;
+      a.click();
+      btn.textContent = '✅ Скачано!';
+      setTimeout(() => { btn.textContent = '⬇ Скачать ' + filename.replace('.png','').replace('_',' '); btn.disabled = false; }, 2500);
+    }, 'image/png');
+  } catch(e) {
+    btn.textContent = '❌ Ошибка';
+    btn.disabled = false;
+  }
+}
+</script>
+</body>
+</html>
